@@ -1,3 +1,19 @@
 .bg-black{
     background-color: #778899
 }
+.fixed{
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+}
+.z-level{
+    z-index: 10;
+}
+.animated-underline{
+    border-bottom: 2px solid white;
+
+}
+.animated-underline:hover{
+    border-bottom: 2px solid black;
+}
