@@ -12,4 +12,8 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
   }
 
+  testing(){
+    console.log(document.documentElement.clientHeight * 0.07);
+  }
+
 }
