@@ -44,7 +44,7 @@
     left: 0;
     right: 0;
     position: absolute;
-    background: rgba(170, 170, 170, 0.5);
+    background: rgba(170, 170, 170, 0.3);
     padding-top: 10vh;
     height: 25vh;
     width: 30vw;
@@ -56,7 +56,7 @@
     transition: background .5s ease-out;
 }
 .anchor-overlay:hover{
-    background: rgba(170, 170, 170, 0.8);
+    background: rgba(170, 170, 170, 0.6);
 }
 .anchor-container{
     position: relative;
