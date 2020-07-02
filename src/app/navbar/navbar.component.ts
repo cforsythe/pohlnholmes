@@ -13,9 +13,17 @@ export class NavbarComponent implements OnInit {
     iconRegistry.addSvgIcon(
       'phone',
       sanitizer.bypassSecurityTrustResourceUrl('assets/img/icons/round-phone-24px.svg'));
+    iconRegistry.addSvgIcon(
+      'email',
+      sanitizer.bypassSecurityTrustResourceUrl('assets/img/icons/round-email-24px.svg'));
   }
 
   ngOnInit() {
   }
 
+  navbarOpen = false;
+  
+  toggleNavbar() {
+    this.navbarOpen = !this.navbarOpen;
+  }
 }

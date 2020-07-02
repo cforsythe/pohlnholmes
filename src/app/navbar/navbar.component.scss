@@ -15,6 +15,24 @@
     border-bottom: 2px solid white;
 
 }
+.icon{
+    width: auto;
+}
 .animated-underline:hover{
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #57bc90;
+}
+.flex-icons{
+    width: auto;
+    text-align: right;
+}
+.inline{
+    display: inline-block;
+}
+ul, li{
+    margin: unset;
+    padding-left: 0px;
+    z-index: 11;
+}
+.fill-green{
+    fill: #57bc90;
 }

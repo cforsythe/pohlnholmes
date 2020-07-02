@@ -1,25 +1,32 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white fixed z-level">
   <a class="navbar-brand" routerLink="/home">Pohl and Holmes</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" (click)='toggleNavbar()' data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav animated-underline">
-          <a class="nav-item nav-link underline clickable" routerLink='/home' routerLinkActive="active">Home<span class="sr-only">(current)</span></a>
-        </div>
-    <div class="navbar-nav animated-underline">
-      <a class="nav-item nav-link underline clickable" routerLink='/about' routerLinkActive="active">About Us<span class="sr-only">(current)</span></a>
-    </div>
-    <div class="navbar-nav animated-underline">
-      <a class="nav-item nav-link underline clickable" routerLink='/hullandshell' routerLinkActive="active">Hulling/Shelling Services<span class="sr-only">(current)</span></a>
-    </div>
-    <div class="navbar-nav animated-underline">
-      <a class="nav-item nav-link underline clickable" routerLink='/contact' routerLinkActive="active">Contact Us<span class="sr-only">(current)</span></a>
-    </div>
-    <div class="navbar-nav animated-underline">
-      <a class="nav-item nav-link underline clickable" routerLink='/contact' routerLinkActive="active">
-          <mat-icon svgIcon='phone'></mat-icon>
-      </a>
-    </div>
-  </div>
+  <ul class="collapse navbar-collapse green" [ngClass]="{ 'show': navbarOpen }" id="navbarNavAltMarkup">
+    <li class="navbar-nav animated-underline">
+      <a class="nav-item nav-link" routerLink='/home' routerLinkActive="active">Home<span class="sr-only">(current)</span></a>
+    </li>
+    <li class="navbar-nav animated-underline">
+      <a class="nav-item nav-link" routerLink='/about' routerLinkActive="active">About Us<span class="sr-only">(current)</span></a>
+    </li>
+    <li class="navbar-nav animated-underline">
+      <a class="nav-item nav-link" routerLink='/hullandshell' routerLinkActive="active">Hulling/Shelling Services<span class="sr-only">(current)</span></a>
+    </li>
+    <li class="navbar-nav animated-underline">
+      <a class="nav-item nav-link green" routerLink='/contact' routerLinkActive="active">Contact Us<span class="sr-only">(current)</span></a>
+    </li>
+    <ul class='flex-icons ml-auto'>
+      <li class="animated-underline inline">
+        <a class="nav-item nav-link" href='tel:+12098834853'>
+            <mat-icon class='fill-green' svgIcon='phone'></mat-icon>
+        </a>
+      </li>
+      <li class="animated-underline inline">
+        <a class="nav-item nav-link" href='mailto:something@gmail.com'>
+            <mat-icon class='fill-green' svgIcon='email'></mat-icon>
+        </a>
+      </li>
+    </ul>
+  </ul>
 </nav>
